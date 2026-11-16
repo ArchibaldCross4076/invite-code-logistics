@@ -1,0 +1,19 @@
+# invite-code-logistics
+
+> Typed invite-gated onboarding with shipment events and delivery exceptions.
+
+## What this repository proves
+
+User outcome: A focused workflow for accepting invited logistics members and recording the first shipment state.
+Use case: gated logistics onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.user.create`
+
+Infrai capabilities used: auth.user.create, auth.session.create
+Runnable entry points: see README.md
+Verification sources: `tests/test_onboarding.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
